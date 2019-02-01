@@ -94,10 +94,6 @@ button:hover {
 	opacity: 1;
 }
 
-input[type="text-area"] {
-	height: 3em;
-}
-
 input[type="checkbox"] {
 	margin-right: 0.5em;
 	display: flex;
@@ -109,9 +105,14 @@ select {
 	color: $primary-grape;
 	font-size: 1.1em;
 	border: none;
+	width: 100%;
 }
 
 p.checkbox {
   display: flex;
   margin-top: 0.5em;
+}
+
+textarea {
+	width: 100%;
 }
