@@ -1,0 +1,112 @@
+input[type="radio"] {
+  display: none;
+}
+
+.progress > span {
+  background: #94618e;
+  margin-top: 1em;
+  display: inline-block;
+  height: 5px;
+  transition: 0.3s;
+  width: 0;
+}
+
+#two:checked ~ .progress span {
+  width: calc(100% / 5 * 1);
+}
+
+#three:checked ~ .progress span {
+  width: calc(100% / 5 * 2);
+}
+
+#four:checked ~ .progress span {
+  width: calc(100% / 5 * 3);
+}
+
+#five:checked ~ .progress span {
+  width: calc(100% / 5 * 4);
+}
+
+#six:checked ~ .progress span {
+  width: calc(100% / 5 * 5);
+}
+
+.panels {
+  padding: 0.3em;
+}
+
+.panels div {
+  display: none;
+}
+
+#one:checked ~ .panels [data-panel="one"],
+#two:checked ~ .panels [data-panel="two"],
+#three:checked ~ .panels [data-panel="three"],
+#four:checked ~ .panels [data-panel="four"],
+#five:checked ~ .panels [data-panel="five"],
+#six:checked ~ .panels [data-panel="six"] {
+  display: block;
+}
+
+body {
+  background-color: #94618e;
+  padding: 0 10em;
+  font-family: 'Roboto', Arial;
+}
+
+.form {
+  background: #ffffff;
+  box-shadow: 0 10px 10px #49274A;
+  margin: 4em;
+  min-width: 480px;
+  padding: 1em;
+}
+
+.panels div {
+  border-top: solid 1px #c0c0c0;
+  margin: 1em 0 0;
+  padding: 1em 0 0;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  padding: .4em;
+  width: 100%;
+}
+
+button {
+  background-color: #94618e;
+  border: 0;
+  color: #F8EEE7;
+  font-weight: 700;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+input[type="text-area"] {
+  height: 3em;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+  display: flex;
+  width: auto;
+}
+
+select {
+  background-color: #F8EEE7;
+  color: #94618e;
+  font-size: 1.1em;
+  border: none;
+}
+
+p.checkbox {
+  display: flex;
+  margin-top: 0.5em;
+}

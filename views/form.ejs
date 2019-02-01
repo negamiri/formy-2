@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home Page</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Aleo|Rubik|Roboto" rel="stylesheet">
+  
+  <!-- Linking Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/form2.css" type="text/css" />
+
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/form.js"></script>
+
+</head>
+
+<div class="form">
+	<h2>Thanks for visiting the form.</h2>
+	<p>Lets get started and you'll be going in no time.</p>
+	<p>The progress bar says where you're at!</p>
+
+	<input id="one" type="radio" name="stage" checked="checked" />
+	<input id="two" type="radio" name="stage" />
+	<input id="three" type="radio" name="stage" />
+	<input id="four" type="radio" name="stage" />
+	<input id="five" type="radio" name="stage" />
+	<input id="six" type="radio" name="stage" />
+
+	<div class="stages">
+		<label for="one"></label>
+		<label for="two"></label>
+		<label for="three"></label>
+		<label for="four"></label>
+		<label for="five"></label>
+		<label for="six"></label>
+	</div>
+
+	<span class="progress"><span></span></span>
+
+	<div class="panels">
+		<div data-panel="one">
+			<h4>Personal info</h4>
+      <input type="text" placeholder="First Name" required>
+      <br />
+      <input type="text" placeholder="Last Name" required>
+      <br />
+			<input type="text" placeholder="Email" required>
+		</div>
+		<div data-panel="two">
+			<h4>When is your birthday?</h4>
+			<input type="date" />
+		</div>
+		<div data-panel="three">
+			<h4>Upload a picture for your profile</h4>
+			<input type="file" name="myPicture" />
+		</div>
+		<div data-panel="four">
+			<h4>How would you like to hear from us in the future?</h4>
+      <p class="checkbox">
+        <input type="checkbox" name="emails" />
+        <label for="emails">Send me emails</label>
+      </p>
+      <p class="checkbox">
+        <input type="checkbox" name="owls" />
+        <label for="owls">Send me owls</label>
+      </p>
+      <p class="checkbox">
+        <input type="checkbox" name="sms" />
+        <label for="sms">Send me SMS</label>
+      </p>
+		</div>
+		<div data-panel="five">
+			<h4>Industry</h4>
+      <select name="industry">
+        <option value="marketing">Marketing</option>
+        <option value="tech">Technology</option>
+        <option value="insurance">Insurance</option>
+        <option value="tourism">Tourism</option>
+      </select>
+		</div>
+		<div data-panel="six">
+			<h4>Anything else you'd like us to know?</h4>
+      <input type="text-area">
+    </div>
+	</div>
+
+	<button>Next</button>
+
+</div>

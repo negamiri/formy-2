@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/form", (req, res) => {
+  res.render("form");
+});
+
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
