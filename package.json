@@ -1,25 +1,17 @@
 {
-  "name": "node-skeleton",
+  "name": "formy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple forms to get your project started",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "local": "./node_modules/.bin/nodemon --ignore public/",
+    "start": "node server.js"
   },
   "author": "Negar",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "dotenv": "^2.0.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "node-sass-middleware": "^0.9.8",
-    "pg": "^6.0.2",
-    "rateyo": "^2.3.5"
-  },
-  "devDependencies": {
-    "nodemon": "^1.9.2"
+    "node-sass-middleware": "^0.9.8"
   }
 }
