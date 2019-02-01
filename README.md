@@ -26,4 +26,5 @@ Showing progress
 * Body parser
 * EJS
 * Express
+* JQuery
 * Node sass middleware
