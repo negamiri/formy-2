@@ -24,68 +24,8 @@
 </head>
 
 <body>
-
-  <form action="/">
-
-    <div class="intro">
-      <p>Hey you! Good to see you. Thanks for taking our quiz. Lets get started.</p>
-      <a href="#start" class="start-button">Start</a>
-    </div>
-
-    <div class="fade" id="start">
-      <p>First things first. Lets get you set up...</p>
-      <label>Name: </label><input type="text" class="name" required>
-      <label>Email: </label><input type="email" name="emailaddress" required>
-      <label>Password: </label><input type="password" name="pwd" required></p>
-      <div id="nextbutton"></div>
-    </div>
-
-    <div class="birthday fade">
-      <p>When is your birthday?</p>
-      <input type="date" name="bday">
-    </div>
-  
-    <div class="picture fade">
-      Picture: <input type="file" name="myFile">
-    </div>
-
-    <div class="fade">
-      <p>How would you like to hear from us in the future?</p>
-      <div class="checkbox">
-        <input type="checkbox" name="emails">
-        <label for="emails">Send me emails</label>
-      </div>
-      
-      <div class="checkbox">
-        <input type="checkbox" name="owls">
-        <label for="owls">Send me owls</label>
-      </div>
-
-      <div class="checkbox">
-        <input type="checkbox" name="sms">
-        <label for="sms">Send me SMS</label>
-      </div>
-    </div>
-
-
-
-    <div class="radio-button fade">
-      Employment status:
-      <br>
-      <input type="radio" name="employment" value="employed">Employed<br>
-      <input type="radio" name="employment" value="unemployed">Unemployed
-    </div>
-
-    <div class="range fade">
-      What's your happiness level today?
-      <br>
-      <input type="range" name="happy" min="1" max="10">
-    </div>
-
-    <div class="submit fade">
-      <input type="submit">
-    </div>
-
-  </form>
-
+  <div class="buttons">
+    <a href="/form1">View first form</a>
+    <a href="/form2">View second form</a>
+  </div>
 </body>

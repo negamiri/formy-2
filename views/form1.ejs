@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home Page</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Aleo|Rubik" rel="stylesheet">
+  
+  <!-- Linking Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/form1.css" type="text/css" />
+
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/form1.js"></script>
+
+</head>
+
+<body>
+
+  <form action="/">
+
+    <div class="intro">
+      <p>Hey you! Good to see you. Thanks for taking our quiz. Lets get started.</p>
+      <a href="#start" class="start-button">Start</a>
+    </div>
+
+    <div class="fade" id="start">
+      <p>First things first. Lets get you set up...</p>
+      <label>Name: </label><input type="text" class="name" required>
+      <label>Email: </label><input type="email" name="emailaddress" required>
+      <label>Password: </label><input type="password" name="pwd" required></p>
+      <div id="nextbutton"></div>
+    </div>
+
+    <div class="birthday fade">
+      <p>When is your birthday?</p>
+      <input type="date" name="bday">
+    </div>
+  
+    <div class="picture fade">
+      Picture: 
+      <input type="file" name="myFile">
+    </div>
+
+    <div class="fade">
+      <p>How would you like to hear from us in the future?</p>
+      <div class="checkbox">
+        <input type="checkbox" name="emails">
+        <label for="emails">Send me emails</label>
+      </div>
+      
+      <div class="checkbox">
+        <input type="checkbox" name="owls">
+        <label for="owls">Send me owls</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" name="sms">
+        <label for="sms">Send me SMS</label>
+      </div>
+    </div>
+
+
+
+    <div class="radio-button fade">
+      Employment status:
+      <br>
+      <input type="radio" name="employment" value="employed">Employed<br>
+      <input type="radio" name="employment" value="unemployed">Unemployed
+    </div>
+
+    <div class="range fade">
+      What's your happiness level today?
+      <br>
+      <input type="range" name="happy" min="1" max="10">
+    </div>
+
+    <div class="submit fade">
+      <input type="submit">
+    </div>
+
+  </form>
+
+</body>

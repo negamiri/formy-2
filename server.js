@@ -23,8 +23,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/form", (req, res) => {
-  res.render("form");
+app.get("/form1", (req, res) => {
+  res.render("form1");
+});
+
+app.get("/form2", (req, res) => {
+  res.render("form2");
 });
 
 app.listen(PORT, () => {
